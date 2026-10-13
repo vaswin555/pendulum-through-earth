@@ -523,4 +523,210 @@ Where LD = lunar distance (384,400 km), AU = astronomical unit (149.6 M km).
 
 ---
 
-*Continued in Part 3: Analogies, Philosophy, Conclusion, References.*
+## 8. Analogies: Atoms, Quantum Oscillators
+
+The harmonic oscillator is one of the most universal structures in physics.
+It appears in classical mechanics, quantum mechanics, field theory, and
+even in cosmology. The pendulum through Earth is a **classical** harmonic
+oscillator with an unusually large amplitude and a spectacular time scale
+(~84 minutes). Let us compare it with other oscillators.
+
+### 8.1 Classical Harmonic Oscillator
+
+The equation
+
+$$
+\frac{d^2 r}{dt^2} + \omega^2 r = 0
+$$
+
+is the canonical form of a harmonic oscillator. The same equation describes:
+
+- a mass on a spring;
+- a pendulum at small angles;
+- an LC circuit;
+- a vibrating string (in Fourier modes).
+
+The pendulum through Earth shares the equation, but the "spring" is
+**gravity itself**.
+
+### 8.2 Quantum Harmonic Oscillator
+
+In quantum mechanics, the same equation (with $r$ replaced by an operator)
+has discrete energy levels:
+
+$$
+E_n = \hbar \omega \left( n + \frac{1}{2} \right),
+\qquad n = 0, 1, 2, \ldots
+$$
+
+The ground state has **zero-point energy** $E_0 = \frac{1}{2}\hbar \omega$ —
+a purely quantum effect with no classical analogue.
+
+If our ball were a quantum particle (which it is not — see below), its
+energy levels would be spaced by
+
+$$
+\Delta E = \hbar \omega \approx 1.055 \times 10^{-34} \cdot 1.242 \times 10^{-3}
+         \approx 1.31 \times 10^{-37}\ \mathrm{J}.
+$$
+
+This is **absurdly small** compared to the ball's kinetic energy
+($\sim 3 \times 10^{11}\ \mathrm{J}$). The quantum nature is completely
+hidden.
+
+### 8.3 Hydrogen Atom
+
+In the Bohr model of the hydrogen atom, the electron orbits the nucleus
+under the Coulomb force
+
+$$
+F = \frac{k_e Z e^2}{r^2},
+$$
+
+which is **inverse-square**, not linear. The orbit is a conic section, and
+the period follows Kepler's third law:
+
+$$
+T^2 \propto a^3.
+$$
+
+So the atom is **not** a harmonic oscillator — it is a **Kepler problem**.
+The pendulum through Earth is different: its force is **linear in $r$**,
+which makes the period **independent of amplitude** and the motion
+**sinusoidal** rather than elliptical.
+
+### 8.4 Pendulum vs. Orbit
+
+Both the tunnel pendulum and a low-Earth-orbit satellite are governed by
+gravity. Their periods are almost identical:
+
+| System | Period |
+|--------|--------|
+| Tunnel pendulum | 84.3 min |
+| LEO satellite (~280 km altitude) | ~90 min |
+| ISS orbit (~400 km) | ~92 min |
+
+This is not a coincidence. Inside the Earth, gravity acts like a spring
+with the same effective constant as the gravitational field at the surface.
+
+### 8.5 Foucault Pendulum
+
+The Foucault pendulum demonstrates Earth's rotation by the precession of
+its swing plane. Our pendulum, if oriented along the equator, would show
+the **Coriolis effect** in an even more dramatic way: the ball would drift
+sideways by hundreds of meters within a few cycles.
+
+Along the pole, however, there is **no precession** and **no Coriolis drift**,
+making the polar pendulum the cleanest realization.
+
+---
+
+## 9. Philosophy: A Perpetual Motion That Doesn't Violate Physics
+
+### 9.1 The Appeal of Perpetual Motion
+
+Since ancient times, inventors have dreamed of a machine that runs forever
+without external energy input. Such a machine would violate the **first
+law of thermodynamics** (conservation of energy) or the **second law**
+(entropy increase). No such machine has ever been built.
+
+The pendulum through Earth looks like a perpetual motion machine: the ball
+oscillates forever, without fuel, without external input. Is this a
+violation?
+
+### 9.2 No Violation
+
+The pendulum does **not** create energy. It **converts** potential energy
+into kinetic energy and back, in a closed cycle. The total energy
+
+$$
+E = \frac{1}{2} m v^2 + \frac{1}{2} k r^2 = \text{const}
+$$
+
+is conserved. No energy is created; none is destroyed.
+
+In a **realistic** tunnel, friction against the walls and residual gas
+would slowly dissipate the energy, and the ball would eventually settle
+at the center. The "perpetual" motion exists only in the **idealized**
+model, where friction and damping are exactly zero.
+
+### 9.3 Idealization in Physics
+
+Physics is full of idealizations:
+
+- the **ideal gas** (no interactions between molecules);
+- the **frictionless plane**;
+- the **point mass**;
+- the **perfectly rigid body**;
+- the **harmonic oscillator** itself.
+
+The pendulum through Earth is another such idealization. It is not a
+machine that "runs forever" — it is a **model** that helps us understand
+the structure of gravitational fields and harmonic motion.
+
+### 9.4 The Philosopher's Pendulum
+
+In a sense, the pendulum through Earth is a **philosopher's pendulum**:
+it exists in thought, in equations, in graphs — but never in reality.
+And yet, it tells us something true about the universe: that the same
+mathematics governs a falling apple, an orbiting satellite, and a
+vibrating atom.
+
+---
+
+## 10. Conclusion
+
+We have explored a simple but rich thought experiment: a ball oscillating
+through a tunnel that passes through the center of the Earth.
+
+**Key results:**
+
+1. Inside a uniform sphere, gravity is **linear in $r$** — a Hooke's law.
+2. The motion is a **harmonic oscillator** with angular frequency
+   $\omega = \sqrt{\frac{4}{3} \pi G \rho}$.
+3. For Earth, the period is **~84.3 minutes** — almost identical to the
+   orbital period of a low-Earth-orbit satellite.
+4. The maximum speed at the center is **~7.9 km/s** — the first cosmic
+   velocity.
+5. The only significant perturbation is the **Coriolis effect** (~12% of
+   $g$ on the equator), which vanishes for a **polar tunnel**.
+6. The ball travels **25,484 km per cycle**, **434,000 km per day**
+   (≈ 1.13 lunar distances), and **1.59 × 10⁸ km per year** (≈ 1.06 AU).
+7. The pendulum is a **classical analogue** of the quantum harmonic
+   oscillator — but with a mass so large that quantum effects are
+   invisible.
+8. It is a **perpetual motion in thought**, not in reality: it conserves
+   energy, does not violate thermodynamics, and requires frictionless
+   idealization.
+
+**Open questions:**
+
+- What is the exact period for a **non-uniform** Earth (PREM model)?
+- Could a **small-amplitude** version of this experiment be performed in
+  a laboratory using a **gravitational analogue**?
+- Is there a **relativistic** correction to the period at the level of
+  $G M / (R c^2) \sim 7 \times 10^{-10}$?
+
+These remain as exercises for the reader.
+
+---
+
+## 11. References
+
+1. Newton, I. *Philosophiæ Naturalis Principia Mathematica*, 1687.
+   (Shell theorem, gravity.)
+2. Feynman, R. P., Leighton, R. B., Sands, M. *The Feynman Lectures on
+   Physics*, Vol. I, Ch. 7–9. Addison-Wesley, 1963.
+   (Gravity inside a sphere, harmonic motion.)
+3. Landau, L. D., Lifshitz, E. M. *Mechanics*. Pergamon Press, 1976.
+   (Harmonic oscillator, Coriolis force.)
+4. Dziewonski, A. M., Anderson, D. L. *Preliminary reference Earth model*.
+   Physics of the Earth and Planetary Interiors, 25(4):297–356, 1981.
+   (PREM — non-uniform Earth density.)
+5. Goldstein, H., Poole, C. P., Safko, J. L. *Classical Mechanics*.
+   Addison-Wesley, 3rd edition, 2001.
+   (Central forces, Kepler problem.)
+
+---
+
+*© 2026 Vasili Valentir. Licensed under CC BY 4.0.*
