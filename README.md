@@ -283,6 +283,30 @@ orbit just above Earth's surface.
 A satellite in low Earth orbit has an orbital period of about 90 minutes.
 Our pendulum period is 84.3 minutes — remarkably close. This is not a
 coincidence; both motions are governed by the same central force.
+### 4.5 Visualization
+
+![Position over one period](images/r_t.png)
+*Position $r(t)$ of the ball over one full period (~84.3 min).*
+
+![Velocity over one period](images/v_t.png)
+*Velocity $v(t)$ — sinusoidal, maximum at the center.*
+
+![Phase portrait](images/phase.png)
+*Phase portrait $v(r)$ — a semicircle, characteristic of a harmonic oscillator.*
+
+![Period vs density](images/T_rho.png)
+*Period as a function of density. Earth's mean density is marked in red.*
+
+![Pole vs equator](images/pole_vs_equator.png)
+*Comparison: polar pendulum vs equatorial pendulum. The difference is ~10 s per cycle.*
+
+### 4.5a Animation
+
+![Animation of the ball through Earth](images/animation.gif)
+
+*The ball accelerates toward the center, reaches maximum speed (~7.9 km/s),
+passes through the center, decelerates, momentarily stops at the opposite
+pole, and falls back. The full period is ~84.3 minutes.*
 
 ### 4.6 Half-Period (One-Way Trip)
 
