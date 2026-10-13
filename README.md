@@ -294,4 +294,233 @@ $$
 
 ---
 
-*Continued in Part 2: Perturbations, Materials, Scale, Analogies, Philosophy.*
+## 5. Perturbations: Rotation, Orbit, Galaxy
+
+So far we have treated the Earth as a uniform, non-rotating sphere in
+isolation. Real Earth is none of these. In this section we estimate the
+magnitude of each perturbation.
+
+### 5.1 Earth's Rotation (Coriolis Effect)
+
+Earth rotates with angular velocity
+
+$$
+\Omega = \frac{2\pi}{T_{\text{sidereal}}}
+       = \frac{2\pi}{86{,}164\ \mathrm{s}}
+       \approx 7.292 \times 10^{-5}\ \mathrm{rad/s}.
+$$
+
+A body moving with velocity $v$ in a rotating frame experiences the
+**Coriolis acceleration**
+
+$$
+\vec{a}_{\text{Cor}} = -2 \, \vec{\Omega} \times \vec{v}.
+$$
+
+Its magnitude for motion along the tunnel is
+
+$$
+a_{\text{Cor}} \approx 2 \, \Omega \, v.
+$$
+
+At maximum speed $v_{\max} \approx 7913\ \mathrm{m/s}$:
+
+$$
+a_{\text{Cor}} \approx 2 \cdot 7.292 \times 10^{-5} \cdot 7913
+                  \approx 1.15\ \mathrm{m/s^2}.
+$$
+
+For comparison, gravitational acceleration is $g \approx 9.81\ \mathrm{m/s^2}$,
+so the Coriolis effect is about **12% of $g$**.
+
+**Consequence:** A ball in an equatorial tunnel would be pushed sideways
+and hit the wall within minutes. The ball in a **polar tunnel** experiences
+**zero Coriolis force**, because $\vec{\Omega}$ is parallel to $\vec{v}$.
+
+This is why the **pole-to-pole tunnel** is the natural idealization.
+
+### 5.2 Centrifugal Effect at the Equator
+
+On the equator, the centrifugal acceleration is
+
+$$
+a_{\text{cf}} = \Omega^2 R_{\text{eq}}
+             = (7.292 \times 10^{-5})^2 \cdot 6.378 \times 10^{6}
+             \approx 3.39 \times 10^{-2}\ \mathrm{m/s^2}.
+$$
+
+This reduces the effective inward pull. The modified frequency is
+
+$$
+\omega_{\text{eq}} = \sqrt{\omega^2 - \Omega^2}.
+$$
+
+Numerically:
+
+$$
+\omega_{\text{eq}} \approx 1.2397 \times 10^{-3}\ \mathrm{rad/s},
+$$
+
+compared to $\omega_{\text{pole}} \approx 1.242 \times 10^{-3}\ \mathrm{rad/s}$.
+The relative difference is only **0.18%**, giving
+
+- $T_{\text{pole}} \approx 84.30\ \mathrm{min}$,
+- $T_{\text{eq}} \approx 84.47\ \mathrm{min}$.
+
+**A difference of about 10 seconds per cycle.**
+
+### 5.3 Earth's Orbit Around the Sun
+
+The Earth orbits the Sun with speed $v_{\text{orb}} \approx 29.8\ \mathrm{km/s}$
+at distance $d \approx 1.496 \times 10^{11}\ \mathrm{m}$. The resulting
+centripetal acceleration is
+
+$$
+a_{\text{orb}} = \frac{v_{\text{orb}}^2}{d}
+              \approx 5.9 \times 10^{-3}\ \mathrm{m/s^2},
+$$
+
+about **0.06% of $g$**. The tidal acceleration across the Earth's diameter is
+
+$$
+\Delta a \approx \frac{2 G M_\odot R}{d^3}
+            \approx 5 \times 10^{-7}\ \mathrm{m/s^2},
+$$
+
+**negligible.**
+
+### 5.4 Galaxy
+
+Earth orbits the galactic center at $\sim 230\ \mathrm{km/s}$ with a period
+of $\sim 225$ million years. The corresponding tidal acceleration is on the
+order of $10^{-10}\ \mathrm{m/s^2}$ — **utterly negligible.**
+
+### 5.5 Summary of Perturbations
+
+| Source | Acceleration | Fraction of $g$ |
+|--------|--------------|-----------------|
+| Coriolis (equator, max) | $1.15\ \mathrm{m/s^2}$ | 12% |
+| Centrifugal (equator) | $3.4 \times 10^{-2}$ | 0.35% |
+| Orbital | $5.9 \times 10^{-3}$ | 0.06% |
+| Tidal (Sun) | $5 \times 10^{-7}$ | $5 \times 10^{-6}$% |
+| Galactic | $\sim 10^{-10}$ | $\sim 10^{-9}$% |
+
+**Conclusion:** The Coriolis effect dominates. A polar tunnel avoids it
+entirely.
+
+---
+
+## 6. Materials: Why Tungsten?
+
+### 6.1 Requirements
+
+The ball must:
+
+1. Survive the temperature at Earth's center ($\sim 6000\ \mathrm{K}$).
+2. Survive the pressure at the core ($\sim 3.6 \times 10^{11}\ \mathrm{Pa}$).
+3. Have sufficient density to minimize air resistance (moot in vacuum).
+4. Be non-magnetic (or controllably magnetic, for Coriolis compensation).
+
+### 6.2 Candidate Materials
+
+| Material | Density (kg/m³) | Melting point (K) |
+|----------|-----------------|-------------------|
+| Cast iron | 7,200 | 1,500 |
+| Copper | 8,960 | 1,358 |
+| Platinum | 21,450 | 2,041 |
+| Mercury | 13,534 | 234 |
+| **Tungsten** | **19,250** | **3,695** |
+| Osmium | 22,590 | 3,303 |
+
+**No known material survives 6000 K.** Tungsten is the best compromise:
+highest melting point among metals, high density, machinable.
+
+### 6.3 The Ball
+
+Diameter: $1\ \mathrm{m}$.  
+Volume: $V = \frac{4}{3}\pi (0.5)^3 \approx 0.5236\ \mathrm{m^3}$.  
+Mass: $m = \rho_W V \approx 19{,}250 \cdot 0.5236 \approx 10{,}083\ \mathrm{kg}$.
+
+**About 10 tonnes.**
+
+### 6.4 Kinetic Energy at the Center
+
+$$
+E_k = \frac{1}{2} m v_{\max}^2
+    = \frac{1}{2} \cdot 10{,}083 \cdot 7913^2
+    \approx 3.14 \times 10^{11}\ \mathrm{J}
+    \approx 314\ \mathrm{GJ}.
+$$
+
+For comparison, this is about **75 tonnes of TNT equivalent** — the ball
+carries the energy of a small tactical nuclear weapon when it passes through
+the center.
+
+### 6.5 Idealization
+
+Since no real material can survive the core, the "tunnel through Earth"
+is a **thought experiment**. In the mathematical model, the ball is
+**perfectly rigid**, **infinitely strong**, and **does not melt**.
+
+---
+
+## 7. Scale: Distances Traveled
+
+### 7.1 Per Cycle
+
+One full cycle (down and up) covers
+
+$$
+S_{\text{cycle}} = 4 R = 4 \cdot 6{,}371{,}000 \approx 25{,}484\ \mathrm{km}.
+$$
+
+That is **two Earth diameters**.
+
+### 7.2 Per Day
+
+The number of cycles in one sidereal day:
+
+$$
+N_{\text{day}} = \frac{T_{\text{sidereal}}}{T} = \frac{86{,}164}{5058} \approx 17.03.
+$$
+
+Distance:
+
+$$
+S_{\text{day}} \approx 17.03 \cdot 25{,}484 \approx 434{,}000\ \mathrm{km}.
+$$
+
+**The ball travels ~1.13 times the Earth–Moon distance in one day.**
+
+### 7.3 Per Year
+
+Cycles per year:
+
+$$
+N_{\text{year}} = \frac{31{,}557{,}600}{5058} \approx 6238.
+$$
+
+Distance:
+
+$$
+S_{\text{year}} \approx 6238 \cdot 25{,}484 \approx 1.59 \times 10^{8}\ \mathrm{km}.
+$$
+
+**1.59 × 10⁸ km ≈ 1.06 astronomical units** — slightly more than the
+Earth–Sun distance.
+
+**In one year, the pendulum travels the distance from Earth to the Sun.**
+
+### 7.4 Summary
+
+| Period | Cycles | Distance |
+|--------|--------|----------|
+| 1 cycle | 1 | 25,484 km |
+| 1 day | 17.03 | 434,000 km (~1.13 LD) |
+| 1 year | 6,238 | 1.59 × 10⁸ km (~1.06 AU) |
+
+Where LD = lunar distance (384,400 km), AU = astronomical unit (149.6 M km).
+
+---
+
+*Continued in Part 3: Analogies, Philosophy, Conclusion, References.*
